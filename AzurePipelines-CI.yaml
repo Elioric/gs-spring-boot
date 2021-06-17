@@ -26,4 +26,11 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'echo ${Name}'
+    script: 
+      echo $(Name)
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 
+      echo '$(Tester)'
